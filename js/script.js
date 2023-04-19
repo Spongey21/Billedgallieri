@@ -22,6 +22,10 @@ export default (function () {
                     img_element.src = smallIMG.src;
                 })
 
+                smallIMG.addEventListener('touchend', function () {
+                    img_element.src = smallIMG.src;
+                })
+
                 pointer_element.appendChild(smallIMG)
             }
         })
