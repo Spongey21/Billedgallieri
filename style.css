@@ -24,24 +24,6 @@ img {
     gap: 1rem;
 }
 
-.pointer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
-    width: 500px;
-}
-
-.pointer img {
-    cursor: pointer;
-}
-
-.pointer img:hover {
-    border: 2px solid white;
-}
-
 .slider {
     display: grid;
     grid-template-columns: 50px auto 50px;
@@ -51,6 +33,8 @@ img {
 }
 
 .slider img {
+    cursor: zoom-in;
+
     grid-column: 1/4;
 }
 
@@ -87,6 +71,39 @@ img {
 .slider button:first-of-type,
 .slider button:last-of-type {
     grid-row: 1/2;
+}
+
+.pointer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 500px;
+}
+
+.pointer img {
+    cursor: pointer;
+}
+
+.pointer img:hover {
+    border: 2px solid white;
+}
+
+.zoom {
+    border: 2px solid gray;
+
+    width: 200px;
+    height: 300px;
+
+
+    overflow: hidden;
+}
+
+.zoom img {
+
+    transform: scale(2);
 }
 
 @media screen and (max-width: 500px) {
